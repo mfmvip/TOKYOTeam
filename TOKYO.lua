@@ -8923,7 +8923,7 @@ if text == "م2" or text == "م٢" or text == "اوامر2" or text == "اوام
 if not Admin(msg) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✘︙هذا الامر يخص الرتب الاعلى فقط\n✘︙ارسل ↫ (م6) لعرض اوامر الاعضاء', 1, 'md')
 else
-local Help = DevAbs:get(David..'Abs:Help2')
+local Help = DevAbs:get(David..'CCCCCD')
 local text =  [[
 ✘︙اوامر الادمنيه ↫ ⤈
 ┉ ✘ ┉ ✘ ┉ ✘ ┉ ✘ ┉
@@ -8989,8 +8989,8 @@ if text and text:match("^(.*)$") then
 local DavidTEAM =  DevAbs:get(David..'Abs:Help31'..msg.sender_user_id_)
 if DavidTEAM == 'msg' then
 Dev_Abs(msg.chat_id_, msg.id_, 1, "✘︙تم حفظ الكليشه الجديده " ,  1, "md")
-DevAbs:del(David..'Abs:Help31'..msg.sender_user_id_)
-DevAbs:set(David..'Abs:Help3', text)
+DevAbs:del(David..'CCCCCD'..msg.sender_user_id_)
+DevAbs:set(David..'CCCCCD', text)
 Dev_Abs(msg.chat_id_, msg.id_, 1, text , 1, 'md')
 return false end
 end
@@ -8998,7 +8998,7 @@ if text == "م3" or text == "م٣" or text == "اوامر3" or text == "اوام
 if not Admin(msg) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✘︙هذا الامر يخص الرتب الاعلى فقط\n✘︙ارسل ↫ (م6) لعرض اوامر الاعضاء', 1, 'md')
 else
-local Help = DevAbs:get(David..'Abs:Help3')
+local Help = DevAbs:get(David..'CCCCCD')
 local text =  [[
 ✘︙اوامر المدراء ↫ ⤈
 ┉ ✘ ┉ ✘ ┉ ✘ ┉ ✘ ┉
@@ -9044,14 +9044,14 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or text), 1, 'md')
 end end
 if text == "تعيين امر م4" and SecondSudo(msg) or text == "تعيين امر م٤" and SecondSudo(msg) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, "✘︙ارسل كليشة (م4) الان " ,  1, "md")
-DevAbs:set(David..'Abs:Help41'..msg.sender_user_id_, 'msg')
+DevAbs:set(David..'CCCCCD'..msg.sender_user_id_, 'msg')
 return false end
 if text and text:match("^(.*)$") then
-local DavidTEAM =  DevAbs:get(David..'Abs:Help41'..msg.sender_user_id_)
+local DavidTEAM =  DevAbs:get(David..'CCCCCD'..msg.sender_user_id_)
 if DavidTEAM == 'msg' then
 Dev_Abs(msg.chat_id_, msg.id_, 1, "✘︙تم حفظ الكليشه الجديده" ,  1, "md")
-DevAbs:del(David..'Abs:Help41'..msg.sender_user_id_)
-DevAbs:set(David..'Abs:Help4', text)
+DevAbs:del(David..'CCCCCD'..msg.sender_user_id_)
+DevAbs:set(David..'CCCCCD', text)
 Dev_Abs(msg.chat_id_, msg.id_, 1, text , 1, 'md')
 return false end
 end
@@ -9059,7 +9059,7 @@ if text == "م٤" or text == "م4" or text == "اوامر4" or text == "اوام
 if not Admin(msg) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✘︙هذا الامر يخص الرتب الاعلى فقط\n✘︙ارسل ↫ (م6) لعرض اوامر الاعضاء', 1, 'md')
 else
-local Help = DevAbs:get(David..'Abs:Help4')
+local Help = DevAbs:get(David..'CCCCCD')
 local text =  [[
 ✘︙اوامر المنشئين ↫ ⤈
 ┉ ✘ ┉ ✘ ┉ ✘ ┉ ✘ ┉
@@ -9101,14 +9101,14 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or text), 1, 'md')
 end end
 if text == "تعيين امر م5" and SecondSudo(msg) or text == "تعيين امر م٥" and SecondSudo(msg) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, "✘︙ارسل كليشة (م5) الان " ,  1, "md")
-DevAbs:set(David..'Abs:Help51'..msg.sender_user_id_, 'msg')
+DevAbs:set(David..'CCCCCD'..msg.sender_user_id_, 'msg')
 return false end
 if text and text:match("^(.*)$") then
-local DavidTEAM =  DevAbs:get(David..'Abs:Help51'..msg.sender_user_id_)
+local DavidTEAM =  DevAbs:get(David..'CCCCCD'..msg.sender_user_id_)
 if DavidTEAM == 'msg' then
 Dev_Abs(msg.chat_id_, msg.id_, 1, "✘︙تم حفظ الكليشه الجديده " ,  1, "md")
-DevAbs:del(David..'Abs:Help51'..msg.sender_user_id_)
-DevAbs:set(David..'Abs:Help5', text)
+DevAbs:del(David..'CCCCCD'..msg.sender_user_id_)
+DevAbs:set(David..'CCCCCD', text)
 Dev_Abs(msg.chat_id_, msg.id_, 1, text , 1, 'md')
 return false end
 end
@@ -9116,7 +9116,7 @@ if text == "م٥" or text == "م5" or text == "اوامر5" or text == "اوام
 if not SudoBot(msg) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✘︙هذا الامر للمطورين فقط', 1, 'md')
 else
-local Help = DevAbs:get(David..'Abs:Help5')
+local Help = DevAbs:get(David..'CCCCCD')
 local text =  [[
 ✘︙اوامر المطورين ↫ ⤈
 ┉ ✘ ┉ ✘ ┉ ✘ ┉ ✘ ┉
@@ -9185,10 +9185,10 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or text), 1, 'md')
 end end
 if text == "تعيين امر م6" and SecondSudo(msg) or text == "تعيين امر م٦" and SecondSudo(msg) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, "✘︙ارسل كليشة (م6) الان " ,  1, "md")
-DevAbs:set(David..'Abs:Help61'..msg.sender_user_id_, 'msg')
+DevAbs:set(David..'CCCCCD'..msg.sender_user_id_, 'msg')
 return false end
 if text and text:match("^(.*)$") then
-local DavidTEAM =  DevAbs:get(David..'Abs:Help61'..msg.sender_user_id_)
+local DavidTEAM =  DevAbs:get(David..'CCCCCD'..msg.sender_user_id_)
 if DavidTEAM == 'msg' then
 Dev_Abs(msg.chat_id_, msg.id_, 1, "✘︙تم حفظ الكليشه الجديده" ,  1, "md")
 DevAbs:del(David..'Abs:Help61'..msg.sender_user_id_)
@@ -9197,7 +9197,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, text , 1, 'md')
 return false end
 end
 if text == "م٦" or text == "م6" or text == "اوامر6" or text == "اوامر٦" then
-local Help = DevAbs:get(David..'Abs:Help6')
+local Help = DevAbs:get(David..'CCCCCD')
 local text =  [[
 ✘︙اوامر الاعضاء ↫ ⤈
 ┉ ✘ ┉ ✘ ┉ ✘ ┉ ✘ ┉
@@ -9233,7 +9233,7 @@ if SecondSudo(msg) then
 if text == "تحديث السورس" or text == "تحديث سورس" then 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✘︙جاري تحديث سورس طوكيو', 1, 'md') 
 os.execute('rm -rf TOKYO.lua') 
-os.execute('wget https://raw.githubusercontent.com/CCCCCD/TOKYOTeam/master/TOKYO.lua') 
+os.execute('wget https://raw.githubusercontent.com/mfmvip/TOKYOTeam/master/TOKYO.lua') 
 dofile('TOKYO.lua') 
 io.popen("rm -rf ../.telegram-cli/*")
 print("\27[31;47m\n          ( تم تحديث السورس )          \n\27[0;34;49m\n") 
@@ -9374,7 +9374,7 @@ end
 send(msg.chat_id_, msg.id_,Files)
 end
 if text == "متجر الملفات" or text == 'المتجر' then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/CCCCCD/TOKYOTeamFiles/master/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/mfmvip/TOKYOTeamFiles/master/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
@@ -9406,7 +9406,7 @@ end
 if text and text:match("^(تعطيل ملف) (.*)(.lua)$") then
 local FileGet = {string.match(text, "^(تعطيل ملف) (.*)(.lua)$")}
 local FileName = FileGet[2]..'.lua'
-local GetJson, Res = https.request("https://raw.githubusercontent.com/CCCCCD/TOKYOTeamFiles/master/TOKYOTeamFiles/"..FileName)
+local GetJson, Res = https.request("https://raw.githubusercontent.com/mfmvip/TOKYOTeamFiles/master/TOKYOTeamFiles/"..FileName)
 if Res == 200 then
 os.execute("rm -fr Files/"..FileName)
 send(msg.chat_id_, msg.id_,"\n✘︙الملف ↫ *"..FileName.."*\n✘︙تم تعطيله وحذفه من البوت بنجاح") 
@@ -9418,7 +9418,7 @@ end
 if text and text:match("^(تفعيل ملف) (.*)(.lua)$") then
 local FileGet = {string.match(text, "^(تفعيل ملف) (.*)(.lua)$")}
 local FileName = FileGet[2]..'.lua'
-local GetJson, Res = https.request("https://raw.githubusercontent.com/CCCCCD/TOKYOTeamFiles/master/TOKYOTeamFiles/"..FileName)
+local GetJson, Res = https.request("https://raw.githubusercontent.com/mfmvip/TOKYOTeamFiles/master/TOKYOTeamFiles/"..FileName)
 if Res == 200 then
 local ChekAuto = io.open("Files/"..FileName,'w+')
 ChekAuto:write(GetJson)
@@ -9523,7 +9523,7 @@ local chtext = DevAbs:get(David.."Abs:textch:user")
 if chtext then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✘︙كليشة الاشتراك ↫ ⤈ \n┉ ✘ ┉ ✘ ┉ ✘ ┉ ✘ ┉\n['..chtext..']', 1, 'md')
 else
-local DevAbs6 = DevAbs:get(David.."DevAbs3")
+local DevAbs6 = DevAbs:get(David.."CCCCCD")
 if DevAbs6 then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✘︙عليك الاشتراك في قناة البوت \n✘︙قناة البوت ↫ '..DevAbs6, 1, "html")
 else
