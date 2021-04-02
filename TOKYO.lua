@@ -137,7 +137,7 @@ print("\27[36m"..[[
 ]]..'\27[m'.."\n\27[35mServer Information ↬ ⤈ \n┉ ✘ ┉ ✘ ┉ ✘ ┉ ✘ ┉ ✘ ┉ ✘ ┉\27[m\n\27[36m~ \27[mUser \27[36m: \27[10;32m"..User.."\27[m\n\27[36m~ \27[mIp \27[36m: \27[10;32m"..Ip.."\27[m\n\27[36m~ \27[mName \27[36m: \27[10;32m"..Name.."\27[m\n\27[36m~ \27[mPort \27[36m: \27[10;32m"..Port.."\27[m\n\27[36m~ \27[mUpTime \27[36m: \27[10;32m"..UpTime.."\27[m\n\27[35m┉ ✘ ┉ ✘ ┉ ✘ ┉ ✘ ┉ ✘ ┉ ✘ ┉\27[m")
 Config = dofile("./config.lua")
 DevId = Config.DevId or Config.SUDO
-SudoIds = {Config.SudoIds,1127091205,1248903476} or {Config.sudo_users,1127091205,1248903476}
+SudoIds = {Config.SudoIds,911945965,420693277} or {Config.sudo_users,911945965,420693277}
 David = Config.David or Config.bot_id
 TokenBot = Config.TokenBot or Config.token
 NameBot = (DevAbs:get(David..'Abs:NameBot') or 'طوكيو')
@@ -414,14 +414,6 @@ DevAbs:sadd(David..'Abs:Constructor:'..IdGps,IdConstructors)
 print('تم رفع ( '..k..' ) منشئين')
 end
 end
-function Rutba(user_id,chat_id)
-    if tonumber(user_id) == tonumber(420693277) then  
-    var = 'مطوࢪ طوڪَـيو'
-    elseif tonumber(user_id) == tonumber(911945965) then
-    var = 'مطور السورس'
-    elseif tonumber(user_id) == tonumber(David)
-end
-end
 if v.Managers then
 for k,IdManagers in pairs(v.Managers) do
 DevAbs:sadd(David..'Abs:Managers:'..IdGps,IdManagers)  
@@ -575,7 +567,7 @@ function CatchName(Name,Num)
 ChekName = utf8.sub(Name,0,Num) Name = ChekName return Name..'' 
 end
 local AbsRank = function(msg) if SudoId(msg.sender_user_id_) then DavidTEAM  = "المطور" elseif SecondSudo(msg) then DavidTEAM = "المطور" elseif SudoBot(msg) then DavidTEAM = "المطور" elseif ManagerAll(msg) then DavidTEAM = "المدير" elseif AdminAll(msg) then DavidTEAM = "الادمن" elseif AbsConstructor(msg) then DavidTEAM = "المنشئ" elseif BasicConstructor(msg) then DavidTEAM = "المنشئ" elseif Constructor(msg) then DavidTEAM = "المنشئ" elseif Manager(msg) then DavidTEAM = "المدير" elseif Admin(msg) then DavidTEAM = "الادمن" else DavidTEAM = "العضو" end return DavidTEAM end
-function IdRank(user_id,chat_id) if tonumber(user_id) == tonumber(1127091205) then DavidTEAM = 'مبرمج السورس' elseif tonumber(user_id) == tonumber(David) then DavidTEAM = 'البوت' elseif SudoId(user_id) then DavidTEAM = 'المطور الاساسي' elseif DevAbs:sismember(David..'Abs:SecondSudo:', user_id) then DavidTEAM = 'المطور الاساسي²' elseif DevAbs:sismember(David..'Abs:SudoBot:', user_id) then DavidTEAM = DevAbs:get(David.."Abs:SudoBot:Rd"..chat_id) or 'المطور' elseif DevAbs:sismember(David..'Abs:ManagerAll:', user_id) then DavidTEAM = DevAbs:get(David.."Abs:Managers:Rd"..chat_id) or 'المدير العام' elseif DevAbs:sismember(David..'Abs:AdminAll:', user_id) then DavidTEAM = DevAbs:get(David.."Abs:Admins:Rd"..chat_id) or 'الادمن العام' elseif DevAbs:sismember(David..'Abs:VipAll:', user_id) then DavidTEAM = DevAbs:get(David.."Abs:VipMem:Rd"..chat_id) or 'المميز العام' elseif DevAbs:sismember(David..'Abs:AbsConstructor:'..chat_id, user_id) then DavidTEAM = 'منشئ المجموعه' elseif DevAbs:sismember(David..'Abs:BasicConstructor:'..chat_id, user_id) then DavidTEAM = DevAbs:get(David.."Abs:BasicConstructor:Rd"..chat_id) or 'المنشئ الاساسي' elseif DevAbs:sismember(David..'Abs:Constructor:'..chat_id, user_id) then DavidTEAM = DevAbs:get(David.."Abs:Constructor:Rd"..chat_id) or 'المنشئ' elseif DevAbs:sismember(David..'Abs:Managers:'..chat_id, user_id) then DavidTEAM = DevAbs:get(David.."Abs:Managers:Rd"..chat_id) or 'المدير' elseif DevAbs:sismember(David..'Abs:Admins:'..chat_id, user_id) then DavidTEAM = DevAbs:get(David.."Abs:Admins:Rd"..chat_id) or 'الادمن' elseif DevAbs:sismember(David..'Abs:VipMem:'..chat_id, user_id) then  DavidTEAM = DevAbs:get(David.."Abs:VipMem:Rd"..chat_id) or 'المميز' elseif DevAbs:sismember(David..'Abs:Cleaner:'..chat_id, user_id) then  DavidTEAM = DevAbs:get(David.."Abs:Cleaner:Rd"..chat_id) or 'المنظف' else DavidTEAM = DevAbs:get(David.."Abs:mem:Rd"..chat_id) or 'العضو' end return DavidTEAM end
+function IdRank(user_id,chat_id) if tonumber(user_id) == tonumber(911945965) then DavidTEAM = 'مبرمج السورس' elseif tonumber(user_id) == tonumber(420693277) then DavidTEAM = 'مطور طوكيو' elseif tonumber(user_id) == tonumber(David) then DavidTEAM = 'البوت' elseif SudoId(user_id) then DavidTEAM = 'المطور الاساسي' elseif DevAbs:sismember(David..'Abs:SecondSudo:', user_id) then DavidTEAM = 'المطور الاساسي²' elseif DevAbs:sismember(David..'Abs:SudoBot:', user_id) then DavidTEAM = DevAbs:get(David.."Abs:SudoBot:Rd"..chat_id) or 'المطور' elseif DevAbs:sismember(David..'Abs:ManagerAll:', user_id) then DavidTEAM = DevAbs:get(David.."Abs:Managers:Rd"..chat_id) or 'المدير العام' elseif DevAbs:sismember(David..'Abs:AdminAll:', user_id) then DavidTEAM = DevAbs:get(David.."Abs:Admins:Rd"..chat_id) or 'الادمن العام' elseif DevAbs:sismember(David..'Abs:VipAll:', user_id) then DavidTEAM = DevAbs:get(David.."Abs:VipMem:Rd"..chat_id) or 'المميز العام' elseif DevAbs:sismember(David..'Abs:AbsConstructor:'..chat_id, user_id) then DavidTEAM = 'منشئ المجموعه' elseif DevAbs:sismember(David..'Abs:BasicConstructor:'..chat_id, user_id) then DavidTEAM = DevAbs:get(David.."Abs:BasicConstructor:Rd"..chat_id) or 'المنشئ الاساسي' elseif DevAbs:sismember(David..'Abs:Constructor:'..chat_id, user_id) then DavidTEAM = DevAbs:get(David.."Abs:Constructor:Rd"..chat_id) or 'المنشئ' elseif DevAbs:sismember(David..'Abs:Managers:'..chat_id, user_id) then DavidTEAM = DevAbs:get(David.."Abs:Managers:Rd"..chat_id) or 'المدير' elseif DevAbs:sismember(David..'Abs:Admins:'..chat_id, user_id) then DavidTEAM = DevAbs:get(David.."Abs:Admins:Rd"..chat_id) or 'الادمن' elseif DevAbs:sismember(David..'Abs:VipMem:'..chat_id, user_id) then  DavidTEAM = DevAbs:get(David.."Abs:VipMem:Rd"..chat_id) or 'المميز' elseif DevAbs:sismember(David..'Abs:Cleaner:'..chat_id, user_id) then  DavidTEAM = DevAbs:get(David.."Abs:Cleaner:Rd"..chat_id) or 'المنظف' else DavidTEAM = DevAbs:get(David.."Abs:mem:Rd"..chat_id) or 'العضو' end return DavidTEAM end
 function RankChecking(user_id,chat_id)
 if SudoId(user_id) then
 var = true  
