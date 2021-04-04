@@ -3693,10 +3693,10 @@ if dp.first_name_ ~= false then DevName = dp.first_name_ else DevName = dp.first
 if DevText then
 Dev_Abs(msg.chat_id_, msg.id_, 1, DevText, 1, "md")
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '✘︙*𝐍𝐀𝐌𝐄* ↬ ['..DevName..']\n✘︙*𝐔𝐒𝐄𝐑* ↬ ['..DevUser..']\n✘︙*𝐈𝐃* ↬ "..DevId..''..DevCh, 1, "md")
+Dev_Abs(msg.chat_id_, msg.id_, 1, '✘︙*𝐍𝐀𝐌𝐄* ↬ ['..DevName..']\n✘︙*𝐔𝐒𝐄𝐑* ↬ ['..DevUser..']\n✘︙*𝐈𝐃* ↬ '..DevId..''..DevCh, 1, "md")
 end
 end,nil)
-end 
+end
 if text and text:match('^هينه @(.*)') and ChCheck(msg) or text and text:match('^هينها @(.*)') then 
 if not DevAbs:get(David..'Abs:Lock:Stupid'..msg.chat_id_) then
 local username = text:match('^هينه @(.*)') or text:match('^هينها @(.*)') 
