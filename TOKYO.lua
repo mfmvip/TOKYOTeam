@@ -3684,8 +3684,8 @@ if text == "ايدي المجموعه" and ChCheck(msg) then Dev_Abs(msg.chat_id
 if text == 'مسح سحكاتي' or text == 'مسح تعديلاتي' or text == 'حذف سحكاتي' or text == 'حذف تعديلاتي' then DevAbs:del(David..'Abs:EditMsg'..msg.chat_id_..msg.sender_user_id_) Dev_Abs(msg.chat_id_, msg.id_, 1, '✘︙تم حذف جميع تعديلاتك بنجاح' , 1, 'md') end
 if text == 'مسح جهاتي' or text == 'مسح اضافاتي' or text == 'حذف جهاتي' or text == 'حذف اضافاتي' then DevAbs:del(David..'Abs:ContactNumber'..msg.chat_id_..':'..msg.sender_user_id_) Dev_Abs(msg.chat_id_, msg.id_, 1, '✘︙تم حذف جميع جهاتك المضافه' , 1, 'md') end
 if text == 'المطور' or text == 'مطور' then
-local TEXT_SUDO = database:get(bot_id..'TEXT_DevId')
-if TEXT_SUDO then 
+local TEXT_DevId = database:get(bot_id..'TEXT_DevId')
+if TEXT_DevId then 
 send(msg.chat_id_, msg.id_,TEXT_DevId)
 else
 tdcli_function ({ID = "GetUser",user_id_ = DevId},function(arg,result) 
