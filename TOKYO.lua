@@ -3693,7 +3693,7 @@ if dp.first_name_ ~= false then DevName = dp.first_name_ else DevName = dp.first
 if DevText then
 Dev_Abs(msg.chat_id_, msg.id_, 1, DevText, 1, "md")
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '✘︙*Dev Name* ↬ ['..DevName..']\n✘︙*Dev User* ↬ ['..DevUser..']\n✘︙*Dev Id* ↬ '..DevId..''..DevCh, 1, "md")
+Dev_Abs(msg.chat_id_, msg.id_, 1, '✘︙*𝐍𝐀𝐌𝐄* ↬ ['..DevName..']\n✘︙*𝐔𝐒𝐄𝐑* ↬ ['..DevUser..']\n✘︙*𝐈𝐃* ↬ '..DevId..''..DevCh, 1, "md")
 end
 end,nil)
 end 
