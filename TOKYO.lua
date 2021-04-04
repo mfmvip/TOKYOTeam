@@ -3739,7 +3739,7 @@ if tonumber(result.sender_user_id_) == tonumber(DevId) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, 'دي لكك تريد اهينن تاج راسكك؟😏🖕🏿', 1, 'md')
 return false
 end 
-if tonumber(result.sender_user_id_) == tonumber(1127091205) then  
+if tonumber(result.sender_user_id_) == tonumber(911945965) then  
 Dev_Abs(msg.chat_id_, msg.id_, 1, 'دي لكك تريد اهينن تاج راسكك؟😏🖕🏿', 1, 'md')
 return false
 end 
