@@ -3688,11 +3688,11 @@ local DevCh1 = DevAbs:get(David.."DevAbs3")
 local DevText = DevAbs:get(David.."DevText")
 if DevCh1 then DevCh = '\n✘︙*Dev Ch* ↬ ['..DevCh1..']' else DevCh = '' end
 tdcli_function({ID="GetUser",user_id_=DevId},function(arg,dp) 
-if dp.first_name_ ~= false then DevUser = ''..dp.first_name_ else DevUser = dp.first_name_ end
+if dp.username_ ~= false then DevUser = '@'..dp.username_ else DevUser = dp.first_name_ end
 if DevText then
 Dev_Abs(msg.chat_id_, msg.id_, 1, DevText, 1, "md")
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '✘︙*المطور الاساسي* ↤ ['..DevUser..'](t.me/dp.username_)\n✘︙*ايدي المطور* ↤ '..DevId..''..DevCh, 1, "md")
+Dev_Abs(msg.chat_id_, msg.id_, 1, '✘︙*المطور الاساسي* ↤ ['..DevUser..']\n✘︙*ايدي المطور* ↤ '..DevId..''..DevCh, 1, "md")
 end
 end,nil)
 end 
