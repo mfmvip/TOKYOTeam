@@ -3693,9 +3693,6 @@ local Name = '['..result.first_name_..'](tg://user?id='..result.id_..')'
 sendText(msg.chat_id_,Name,msg.id_/2097152/0.5,'md')
 end,nil)
 end
-end
-end,nil)
-end 
 if text and text:match('^هينه @(.*)') and ChCheck(msg) or text and text:match('^هينها @(.*)') then 
 if not DevAbs:get(David..'Abs:Lock:Stupid'..msg.chat_id_) then
 local username = text:match('^هينه @(.*)') or text:match('^هينها @(.*)') 
