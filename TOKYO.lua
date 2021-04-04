@@ -3673,6 +3673,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, text, 1, 'html')
 end
 getUser(msg.sender_user_id_,get_firstname)
 end   
+if text == "مبرمج السورس" then local inline = {{{text=" MUSTAFA ",url="https://my.telegram.org/MFMVIP"}}} SendInline(msg.chat_id_,'✘︙اضغط للحصول على الرابط',nil,inline) return false end
 if text == "اهمس" or text == "همسه" or text == "اريد بوت الهمسه" or text == "دزلي بوت الهمسه" or  text == "دزولي بوت الهمسه" then  Dev_Abs(msg.chat_id_, msg.id_, 1, '✘︙@HMSEBOT', 1, 'md') end
 if text == "رابط حذف" or text == "رابط الحذف" or text == "اريد رابط الحذف" or  text == "شمرلي رابط الحذف" or text == "اريد رابط حذف" then local inline = {{{text="اضغط هنا",url="https://my.telegram.org/auth"}}} SendInline(msg.chat_id_,'✘︙اضغط للحصول على الرابط',nil,inline) return false end
 if text == "بوت الحذف" or text == "اريد بوت الحذف" or text == "اريد بوت حذف" or text == "بوت حذف" or text == "بوت حذف حسابات" or text == "راح احذف" then local inline = {{{text="اضغط هنا",url="https://my.telegram.org/auth"}}} SendInline(msg.chat_id_,'✘︙اضغط للحصول على البوت',nil,inline) return false end
