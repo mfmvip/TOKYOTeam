@@ -3683,20 +3683,17 @@ if text == "رتبتي" and ChCheck(msg) then Dev_Abs(msg.chat_id_, msg.id_, 1, 
 if text == "ايدي المجموعه" and ChCheck(msg) then Dev_Abs(msg.chat_id_, msg.id_, 1, "✘︙ايدي المجموعه ↫ `"..msg.chat_id_.."`", 1, 'md') end
 if text == 'مسح سحكاتي' or text == 'مسح تعديلاتي' or text == 'حذف سحكاتي' or text == 'حذف تعديلاتي' then DevAbs:del(David..'Abs:EditMsg'..msg.chat_id_..msg.sender_user_id_) Dev_Abs(msg.chat_id_, msg.id_, 1, '✘︙تم حذف جميع تعديلاتك بنجاح' , 1, 'md') end
 if text == 'مسح جهاتي' or text == 'مسح اضافاتي' or text == 'حذف جهاتي' or text == 'حذف اضافاتي' then DevAbs:del(David..'Abs:ContactNumber'..msg.chat_id_..':'..msg.sender_user_id_) Dev_Abs(msg.chat_id_, msg.id_, 1, '✘︙تم حذف جميع جهاتك المضافه' , 1, 'md') end
-if text == "المطور" then 
-local DevCh1 = DevAbs:get(David.."DevAbs3")
-local DevText = DevAbs:get(David.."DevText")
-if DevCh1 then DevCh = '\n✘︙*Dev Ch* ↬ ['..DevCh1..']' else DevCh = '' end
-tdcli_function({ID="GetUser",user_id_=DevId},function(arg,dp) 
-if dp.username_ ~= false then DevUser = '@'..dp.username_ else DevUser = dp.first_name_ end
-if DevName = [..result.first_name_..](tg://user?id='..result.id_..') end
-if DevText then
-Dev_Abs(msg.chat_id_, msg.id_, 1, DevText, 1, "md")
+if text == 'المطور' or text == 'مطور' then
+local TEXT_SUDO = database:get(bot_id..'TEXT_DevId')
+if TEXT_SUDO then 
+send(msg.chat_id_, msg.id_,TEXT_DevId)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '✘︙*Dev User* ↬ ['..DevUser..']\n ✘︙*Dev name* ↬ ['..DevName..']\n✘︙*Dev Id* ↬ '..DevId..''..DevCh, 1, "md")
-end
+tdcli_function ({ID = "GetUser",user_id_ = DevId},function(arg,result) 
+local Name = '['..result.first_name_..'](tg://user?id='..result.id_..')'
+sendText(msg.chat_id_,Name,msg.id_/2097152/0.5,'md')
 end,nil)
-end 
+end
+end
 if text and text:match('^هينه @(.*)') and ChCheck(msg) or text and text:match('^هينها @(.*)') then 
 if not DevAbs:get(David..'Abs:Lock:Stupid'..msg.chat_id_) then
 local username = text:match('^هينه @(.*)') or text:match('^هينها @(.*)') 
