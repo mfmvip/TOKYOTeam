@@ -3683,7 +3683,7 @@ if text == "رتبتي" and ChCheck(msg) then Dev_Abs(msg.chat_id_, msg.id_, 1, 
 if text == "ايدي المجموعه" and ChCheck(msg) then Dev_Abs(msg.chat_id_, msg.id_, 1, "✘︙ايدي المجموعه ↫ `"..msg.chat_id_.."`", 1, 'md') end
 if text == 'مسح سحكاتي' or text == 'مسح تعديلاتي' or text == 'حذف سحكاتي' or text == 'حذف تعديلاتي' then DevAbs:del(David..'Abs:EditMsg'..msg.chat_id_..msg.sender_user_id_) Dev_Abs(msg.chat_id_, msg.id_, 1, '✘︙تم حذف جميع تعديلاتك بنجاح' , 1, 'md') end
 if text == 'مسح جهاتي' or text == 'مسح اضافاتي' or text == 'حذف جهاتي' or text == 'حذف اضافاتي' then DevAbs:del(David..'Abs:ContactNumber'..msg.chat_id_..':'..msg.sender_user_id_) Dev_Abs(msg.chat_id_, msg.id_, 1, '✘︙تم حذف جميع جهاتك المضافه' , 1, 'md') end
-if text == "المطور" then 
+if text == 'المطور' or text == 'مطور' then
 local DevCh1 = DevAbs:get(David.."DevAbs3")
 local DevText = DevAbs:get(David.."DevText")
 if DevCh1 then DevCh = '\n✘︙*Dev Ch* ↬ ['..DevCh1..']' else DevCh = '' end
