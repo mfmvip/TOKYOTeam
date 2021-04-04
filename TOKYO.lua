@@ -2512,7 +2512,7 @@ if not DevAbs:get(David.."Abs:Lock:Kfr"..msg.chat_id_) and not VipMem(msg) then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})
 ReplyStatus(msg,msg.sender_user_id_,"WrongWay","✘︙ممنوع الكفر في المجموعه") 
 end end
-if text and (text:match("سني نكس") or text:match("شيعه") or text:match("الشيعه") or text:match("السنه") or text:match("طائفتكم") or text:match("شيعي") or text:match("انا سني") or text:match("مسيحي") or text:match("يهودي") or text:match("��اب��ي") or text:match("ملحد") or text:match("بالسنه") or text:match("شيعة")) then
+if text and (text:match("سني نكس") or text:match("شيعه") or text:match("الشيعه") or text:match("السنه") or text:match("طائفتكم") or text:match("شيعي") or text:match("انا سني") or text:match("مسيحي") or text:match("يهودي") or text:match("كردي") or text:match("ملحد") or text:match("بالسنه") or text:match("شيعة")) then
 if not DevAbs:get(David.."Abs:Lock:Taf"..msg.chat_id_) and not VipMem(msg) then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})
 ReplyStatus(msg,msg.sender_user_id_,"WrongWay","✘︙ممنوع التكلم بالطائفيه هنا") 
@@ -2696,7 +2696,7 @@ end
 if text == "الرابط" then
 if not DevAbs:get(David.."Abs:Lock:GpLinks"..msg.chat_id_) then 
 if DevAbs:get(David.."Abs:Groups:Links"..msg.chat_id_) then
-Dev_Abs(msg.chat_id_, msg.id_, 1, "✘︙𝒈𝒓𝒐𝒖𝒑 𝒍𝒊𝒏𝒌 ↬ ⤈ \n┉ ✘ ┉ ✘ ┉ ✘ ┉ ✘ ┉\n"..DevAbs:get(David.."Abs:Groups:Links"..msg.chat_id_), 1, "html")
+Dev_Abs(msg.chat_id_, msg.id_, 1, "✘︙𝐆𝐑𝐎𝐔𝐏 𝑳𝐈𝐍𝐊 ↬ ⤈ \n┉ ✘ ┉ ✘ ┉ ✘ ┉ ✘ ┉\n"..DevAbs:get(David.."Abs:Groups:Links"..msg.chat_id_), 1, "html")
 else 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✘︙لايوجد رابط ارسل ↫ ضع رابط او ارسل ↫ انشاء رابط للانشاء', 1, 'md')
 end
@@ -3551,7 +3551,7 @@ if text == "مشاهده المنشور" and ChCheck(msg) or text == "مشاهد
 DevAbs:set(David..'Abs:viewget'..msg.sender_user_id_,true)
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✘︙حسنا قم باعادة توجيه للمنشور الذي تريدني حساب مشاهداته', 1, 'md')
 end
-if text == "السورس" or text == "سورس" then 
+if text == "السورس" or text == "سورس" or text == "يا سورس" then
 local text =  [[
 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 𝙏𝙤 𝙏𝙤𝙠𝙔𝙤 𝙎𝙤𝙪𝙧𝙘𝙚
 ✘ - - - - - - - 𝘛𝘖𝘒𝘠𝘖 - - - - - - - ✘
@@ -3690,10 +3690,11 @@ if DevCh1 then DevCh = '\n✘︙*Dev Ch* ↬ ['..DevCh1..']' else DevCh = '' end
 tdcli_function({ID="GetUser",user_id_=DevId},function(arg,dp) 
 if dp.username_ ~= false then DevUser = '@'..dp.username_ else DevUser = dp.first_name_ end
 if dp.first_name_ ~= false then DevName = dp.first_name_ else DevName = dp.first_name_ end
+if dp.first_name_ ~= false then DevNName =  '['dp.first_name_'](tg://user?id='..result.id_..')' else DevNName = '['dp.first_name_'](tg://user?id='..result.id_..')' end
 if DevText then
 Dev_Abs(msg.chat_id_, msg.id_, 1, DevText, 1, "md")
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '✘︙*𝐍𝐀𝐌𝐄* ↬ ['..DevName..']\n✘︙*𝐔𝐒𝐄𝐑* ↬ ['..DevUser..']\n✘︙*𝐈𝐃* ↬ '..DevId..''..DevCh, 1, "md")
+Dev_Abs(msg.chat_id_, msg.id_, 1, '✘︙*𝐍𝐀𝐌𝐄* ↬ ['..DevNName..']\n✘︙*𝐍𝐀𝐌𝐄* ↬ ['..DevName..']\n✘︙*𝐔𝐒𝐄𝐑* ↬ ['..DevUser..']\n✘︙*𝐈𝐃* ↬ '..DevId..''..DevCh, 1, "md")
 end
 end,nil)
 end 
