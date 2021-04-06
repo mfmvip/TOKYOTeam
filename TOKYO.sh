@@ -44,7 +44,7 @@ cd .. ;sudo rm -rf luarocks*
 sudo timedatectl set-timezone Asia/Baghdad
 echo -e "\033[0;36m"
 echo -e " -------------------------------------------------------"
-echo -e "|                  مرحبا بكم في سورس طوكيو               |"   
+echo -e "|                  مرحبا بكم في سورس طوكيو                 |"   
 echo -e "|                 المطورين : @MFMVIP - @JZZZZ              |"
 echo -e "|                                                       |"
 echo -e "|                                                       |"
