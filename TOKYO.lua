@@ -3688,7 +3688,7 @@ if text == 'مسح جهاتي' or text == 'مسح اضافاتي' or text == 'ح
 if text == 'المطور' or text == 'مطور' then
 local DevCh1 = DevAbs:get(David.."DevAbs3")
 local DevText = DevAbs:get(David.."DevText")
-if DevCh1 then DevCh = '\n✘︙*Dev Ch* ↬ ['..DevCh1..']' else DevCh = '' end
+if DevCh1 then DevCh = '\n✘︙*𝐂𝐇* ↬ ['..DevCh1..']' else DevCh = '' end
 tdcli_function({ID="GetUser",user_id_=DevId},function(arg,dp) 
 if dp.username_ ~= false then DevUser = '@'..dp.username_ else DevUser = dp.first_name_ end
 if dp.first_name_ ~= false then DevName = dp.first_name_ else DevName = dp.first_name_ end
