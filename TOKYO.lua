@@ -72,7 +72,7 @@ SudoIds = {Devmfm:get(Servermustafa.."Idmustafa")},
 Create(Config, "./config.lua")   
 end
 create_config_auto()
-DevId = Devmfm:get(Servermustafa.."Idmustafa"),
+ DevId = Devmfm:get(Servermustafa.."Idmustafa")
 TokenBot = Devmfm:get(Servermustafa.."Tokenmustafa")
 mustafa = Devmfm:get(Servermustafa.."Tokenmustafa"):match("(%d+)")
 SudoIds = {Devmfm:get(Servermustafa.."Idmustafa")}
