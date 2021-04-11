@@ -64,10 +64,10 @@ file:close()
 end
 local CreateConfigAuto = function()
 Config = {
-DevId = Devmfm:get(Servermustafa.."Idmustafa"),
-TokenBot = Devmfm:get(Servermustafa.."Tokenmustafa"),
-mustafa = Devmfm:get(Servermustafa.."Tokenmustafa"):match("(%d+)"),
-SudoIds = {Devmfm:get(Servermustafa.."Idmustafa")},
+DevId = Devmfm:get(Servermustafa.."Idmustafa")
+TokenBot = Devmfm:get(Servermustafa.."Tokenmustafa")
+mustafa = Devmfm:get(Servermustafa.."Tokenmustafa"):match("(%d+)")
+SudoIds = {Devmfm:get(Servermustafa.."Idmustafa")}
 }
 Create(Config, "./config.lua")   
 end
