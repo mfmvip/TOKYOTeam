@@ -7698,7 +7698,7 @@ end
 if not Devmfm:get(mustafa..'mfm:Zrf:mfm'..msg.chat_id_) then
 if text and text:match("^زخرفه (.*)$") and ChCheck(msg) or text and text:match("^زخرف (.*)$") and ChCheck(msg) then 
 local TextZrf = text:match("^زخرفه (.*)$") or text:match("^زخرف (.*)$") 
-UrlZrf = https.request('https://apimfm.ml/zrf.php?mfm='..URL.escape(TextZrf)) 
+UrlZrf = https.request('https://apiabs.ml/zrf.php?abs='..URL.escape(TextZrf)) 
 Zrf = JSON.decode(UrlZrf) 
 t = "✘︙قائمة الزخرفه ↫ ⤈\n┉ ✘ ┉ ✘ ┉ ✘ ┉ ✘ ┉\n"
 i = 0
@@ -7722,7 +7722,7 @@ end
 if not Devmfm:get(mustafa..'mfm:Brg:mfm'..msg.chat_id_) then
 if text and text:match("^برج (.*)$") and ChCheck(msg) or text and text:match("^برجي (.*)$") and ChCheck(msg) then 
 local TextBrg = text:match("^برج (.*)$") or text:match("^برجي (.*)$") 
-UrlBrg = https.request('https://apimfm.ml/brg.php?brg='..URL.escape(TextBrg)) 
+UrlBrg = https.request('https://apiabs.ml/brg.php?brg='..URL.escape(TextBrg)) 
 Brg = JSON.decode(UrlBrg) 
 t = Brg.ok.mfm  
 Dev_mfm(msg.chat_id_, msg.id_, 1, t, 1, 'html')
